@@ -1,0 +1,37 @@
+.owl-carousel .owl-next,
+.owl-carousel .owl-prev {
+	position: absolute;
+	top: 40%;
+	color: #ffffff !important;
+	font-size: 32px !important;
+	padding:20px !important;
+	transition: color .1s;
+	}
+	
+.owl-carousel .owl-prev {
+	left: 0px;
+}
+
+.owl-carousel .owl-next {
+	right: 0px;
+}
+
+.owl-carousel .owl-next:hover,
+.owl-carousel .owl-prev:hover {
+	color: #000000 !important;
+}
+
+.owl-carousel .owl-next:active,
+.owl-carousel .owl-prev:active {
+	color: #ff0000 !important;
+}
+
+.owl-stage { 
+	display: flex !important;
+  	justify-content: center !important;
+  	align-items: center !important;  
+}
+
+button:focus {
+	outline: none !important;
+}

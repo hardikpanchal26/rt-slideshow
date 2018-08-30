@@ -1,0 +1,113 @@
+#sortable {  
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  width: 100% 
+} 
+
+#sortable li { 
+  margin: 5px; 
+  padding: 1px; 
+  float: left; 
+  width: 150px; 
+  height: 150px;  
+  text-align: center; 
+  cursor:move;
+  box-shadow: 0px 0px 2px 0px #aeaeae;
+}
+
+.hndle {
+  cursor: default !important;
+}
+
+.highlight {
+  margin-top: 20px !important; 
+  margin-bottom: 20px !important;
+  text-align: center;
+}
+
+.icon {
+  margin: 10px;
+}
+
+.instruction {
+  color:#46b450;
+}
+
+.images_area {
+  overflow: hidden; 
+  min-height:180px; 
+  background-color: #f6f6f6; 
+  margin:30px !important;
+}
+
+.images_area p {
+  position:relative; 
+  color:#aeaeae;
+}
+
+#postbox-container-2 .button {
+  margin: 5px !important;
+}
+
+.image_container {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+}
+  
+.image_container img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+  
+.image_container > span {
+  background-color:#ffffff; 
+  border: 1px solid #888; 
+  border-radius:2px; 
+  box-shadow: 0px 0px 2px 0px #f6f6f6; 
+  position:absolute; 
+  top:0; 
+  right:0; 
+  margin: 5px 5px 0 0; 
+  cursor: pointer; 
+}
+
+.image_container > span > i {
+  margin: 0px 4px 3px 4px; 
+  
+  color:#555;
+}
+
+select {
+  width: 50%;
+}
+
+.major-publishing-actions {
+    padding: 0px !important;
+    clear: both !important;
+    border-top: 1px solid #fff !important;
+    background: #fff !important;
+}
+
+i.mce-i-icon {
+    font: 400 20px/1 dashicons;
+    padding: 0;
+    vertical-align: top;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: -2px;
+    padding-right: 2px
+}
+
+.mce-toolbar .mce-btn-group .mce-last {
+    border-color: black !important;
+}
