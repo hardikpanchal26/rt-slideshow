@@ -8,7 +8,7 @@
 /** Callback function for admin_enqueue_scripts. Enqueues admin styles and scripts. */
 function rt_slider_admin_scripts() {
 
-	wp_enqueue_style( 'rt-stylesheet', plugins_url( 'assets/css/rt-stylesheet.css', __DIR__ ), array(), '1.4.0' );
+	wp_enqueue_style( 'rt-stylesheet', plugins_url( 'assets/css/rt-stylesheet.css', __DIR__ ), array(), '1.5.0' );
 	wp_enqueue_style( 'font-awesome', plugins_url( 'lib/font-awesome-4.7.0/css/font-awesome.min.css', __DIR__ ), array(), '4.7.0' );
 
 	wp_enqueue_media();
@@ -20,7 +20,7 @@ function rt_slider_public_scripts() {
 	wp_enqueue_style( 'owl-carousel-stylesheet', plugins_url( 'lib/owl-carousel/owl.carousel.css', __DIR__ ), array(), '2.3.5' );
 	wp_enqueue_style( 'animate', plugins_url( 'lib/animate-3.7.0/animate.css', __DIR__ ), array(), '3.7.0' );
 	wp_enqueue_style( 'font-awesome', plugins_url( 'lib/font-awesome-4.7.0/css/font-awesome.min.css', __DIR__ ), array(), '4.7.0' );
-	wp_enqueue_style( 'rt-stylesheet-public', plugins_url( 'assets/css/rt-stylesheet-public.css', __DIR__ ), array(), '1.3.0' );
+	wp_enqueue_style( 'rt-stylesheet-public', plugins_url( 'assets/css/rt-stylesheet-public.css', __DIR__ ), array(), '1.4.0' );
 
 	wp_enqueue_script( 'jquery-updated', plugins_url( 'lib/owl-carousel/jquery-1.9.0.min.js', __DIR__ ), array(), '1.9.1', false );
 	wp_enqueue_script( 'owl-carousel-script', plugins_url( 'lib/owl-carousel/owl.carousel.js', __DIR__ ), array(), '2.3.4', false );
@@ -148,7 +148,7 @@ function image_container() {
 function slider_settings() {
 	global $post;
 	// $slider_settings = //array('fade','false','1000','3000');
-	$slider_settings = ( metadata_exists( 'post', $post->ID, 'rt_slideshow_settings' ) ) ? get_post_meta( $post->ID, 'rt_slideshow_settings', true ) : array( 'fade', 'true', '1000', '3000' );
+	$slider_settings = ( metadata_exists( 'post', $post->ID, 'rt_slideshow_settings' ) ) ? get_post_meta( $post->ID, 'rt_slideshow_settings', true ) : array( 'fade', 'true', '1000', '3000', '500' );
 
 	require plugin_dir_path( __DIR__ ) . 'partials/slider-settings.php';
 

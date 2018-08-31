@@ -63,5 +63,14 @@
 				<span>ms</span>
 			</td>
 		</tr>
+
+		<tr colspan="2">
+			<th>Slideshow Maximum Height</th>
+			<td>
+				<input type="text" class="select" name="slider[]" value="<?php echo $slider_settings[4]; ?>" />
+				<span>px</span>
+			</td>
+		</tr>
+
 	</table>
 </div>

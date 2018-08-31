@@ -86,7 +86,7 @@
   color:#555;
 }
 
-select {
+select, .select {
   width: 50%;
 }
 
