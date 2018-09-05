@@ -16,6 +16,7 @@
 			items: 1,
 			margin:30,
 			autoplay: true,
+			lazyLoad: true,
 	    	nav:true,
 			autoplayTimeout: parseInt(slider_settings[3]),
 			smartSpeed: parseInt(slider_settings[2]),
@@ -29,8 +30,8 @@
 </script>
 <div id="rt_slider_<?php echo esc_attr( $slideshow['id'] ); ?>" class="owl-carousel">
 	<?php foreach ( $image_data as $image ) : ?>
-		<div class="item" align="center" style="background-color: #efefef">
-			<img class="img-responsive adjust" style="max-height:<?php echo esc_attr( $slider_settings[4] ); ?>px; width:auto" src="<?php echo esc_url( wp_get_attachment_image_src( $image, 'full' )[0] ); ?>" />
+		<div class="item" align="center">
+			<img class="img-responsive adjust owl-lazy" style="max-height:<?php echo esc_attr( $slider_settings[4] ); ?>px; width:auto" src="<?php echo site_url(); ?>/wp-content/plugins/<?php echo basename( dirname( __DIR__ ) ); ?>/assets/spinner.gif" data-src="<?php echo esc_url( wp_get_attachment_image_src( $image, 'full' )[0] ); ?>" />
 		</div>
 	<?php endforeach; ?>
 </div>

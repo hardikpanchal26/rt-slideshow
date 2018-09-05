@@ -20,7 +20,7 @@ function rt_slider_public_scripts() {
 	wp_enqueue_style( 'owl-carousel-stylesheet', plugins_url( 'lib/owl-carousel/owl.carousel.css', __DIR__ ), array(), '2.3.5' );
 	wp_enqueue_style( 'animate', plugins_url( 'lib/animate-3.7.0/animate.css', __DIR__ ), array(), '3.7.0' );
 	wp_enqueue_style( 'font-awesome', plugins_url( 'lib/font-awesome-4.7.0/css/font-awesome.min.css', __DIR__ ), array(), '4.7.0' );
-	wp_enqueue_style( 'rt-stylesheet-public', plugins_url( 'assets/css/rt-stylesheet-public.css', __DIR__ ), array(), '1.4.0' );
+	wp_enqueue_style( 'rt-stylesheet-public', plugins_url( 'assets/css/rt-stylesheet-public.css', __DIR__ ), array(), '1.4.2' );
 
 	wp_enqueue_script( 'jquery-updated', plugins_url( 'lib/owl-carousel/jquery-1.9.0.min.js', __DIR__ ), array(), '1.9.1', false );
 	wp_enqueue_script( 'owl-carousel-script', plugins_url( 'lib/owl-carousel/owl.carousel.js', __DIR__ ), array(), '2.3.4', false );
